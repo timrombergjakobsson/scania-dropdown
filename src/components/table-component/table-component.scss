@@ -1,0 +1,67 @@
+@import '../../../node_modules/@scania/typography/dist/scss/mixins';
+@import '../../../node_modules/@scania/typography/dist/scss/tokens';
+
+:host {
+  display: block;
+  border-radius: 4px;
+}
+
+tr,td {
+  width: 192px;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr {
+  border-bottom: 1px solid var(--grey-100);
+}
+
+tr:first-child > td {
+  border-top: 1px solid var(--grey-100);
+}
+
+tr:hover {
+  background: var(--blue-100);
+}
+
+thead {
+  border-bottom: 1px solid var(--grey-100);
+  background: var(--blue-100);
+}
+
+table {
+  margin-top: 24px;
+  width: 768px;
+  background: var(--white);
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--grey-900);
+  
+  letter-spacing: -0.01em;
+}
+
+.table-component__title {
+  border-bottom: 1px solid var(--grey-100);
+  @include type-style('headline-07');
+  font-size: 16px;
+  line-height: 16px;
+
+  th {
+    @include type-style('headline-08');
+  }
+}
+
+
+
+
